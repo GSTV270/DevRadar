@@ -8,8 +8,6 @@ module.exports = {
 
     const techsArray = parseStringAsArray(techs);
 
-    console.log(longitude, latitude, techsArray);
-
     const devs = await Dev.find({
       techs: {
         $in: techsArray,
